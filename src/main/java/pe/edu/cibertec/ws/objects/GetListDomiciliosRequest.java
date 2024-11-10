@@ -24,7 +24,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -34,28 +33,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "id"
-})
-@XmlRootElement(name = "getDomilicioRequest")
-public class GetDomilicioRequest {
+@XmlType(name = "")
+@XmlRootElement(name = "getListDomiciliosRequest")
+public class GetListDomiciliosRequest {
 
-    protected int id;
-
-    /**
-     * Obtiene el valor de la propiedad id.
-     * 
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Define el valor de la propiedad id.
-     * 
-     */
-    public void setId(int value) {
-        this.id = value;
-    }
 
 }
